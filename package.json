@@ -1,0 +1,14 @@
+{
+  "name": "backend-code-generator",
+  "version": "0.1.0",
+  "description": "Deterministic, rule-based generator that turns an entity spec into a runnable backend (no AI).",
+  "type": "commonjs",
+  "bin": {
+    "bcg": "bin/cli.js"
+  },
+  "scripts": {
+    "gen": "node bin/cli.js",
+    "demo": "node bin/cli.js generate examples/blog.json --out ./out/blog-api"
+  },
+  "license": "MIT"
+}

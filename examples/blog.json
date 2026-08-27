@@ -1,0 +1,21 @@
+{
+  "projectName": "blog-api",
+  "target": "node",
+  "entities": [
+    {
+      "name": "Post",
+      "fields": [
+        { "name": "title", "type": "string", "required": true },
+        { "name": "body", "type": "text", "required": false },
+        { "name": "views", "type": "integer", "required": false }
+      ]
+    },
+    {
+      "name": "Comment",
+      "fields": [
+        { "name": "author", "type": "string", "required": true },
+        { "name": "content", "type": "text", "required": true }
+      ]
+    }
+  ]
+}
