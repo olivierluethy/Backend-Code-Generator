@@ -1,0 +1,21 @@
+<!doctype html>
+<!--
+  A plain HTML form for creating a post. The analyzer reads the <form action>
+  and the field names/types here and merges them into the Post entity, so the
+  form and the fetch layer reinforce the same inferred schema.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>New post</title>
+  </head>
+  <body>
+    <form action="/api/posts" method="post">
+      <label>Title <input name="title" type="text" required /></label>
+      <label>Body <textarea name="body"></textarea></label>
+      <label>Views <input name="views" type="number" /></label>
+      <label>Published <input name="published" type="checkbox" /></label>
+      <button type="submit">Create post</button>
+    </form>
+  </body>
+</html>
